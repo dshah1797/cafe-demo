@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ember &amp; Bean | Specialty Coffee, Brunch &amp; Desserts in Vadodara (Demo)</title>
+  <meta name="description" content="Ember &amp; Bean is a fictional specialty café concept in Vadodara, built by Netra Dynamics as a website demo. Explore the menu, story, gallery and reservation enquiry.">
+  <meta name="theme-color" content="#2a1a12">
+  <!-- Demo only: remove this line when you build a real site for a real café. -->
+  <meta name="robots" content="noindex, nofollow">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Ember &amp; Bean (Demo)">
+  <meta property="og:title" content="Ember &amp; Bean | Slow coffee. Warm company. (Website demo)">
+  <meta property="og:description" content="A fictional Vadodara café website demo by Netra Dynamics. See what a premium café website could look like.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&q=70&w=1200">
+  <meta property="og:image:alt" content="Pour-over coffee being brewed with a gooseneck kettle">
+  <meta property="og:locale" content="en_IN">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ember &amp; Bean | Café website demo">
+  <meta name="twitter:description" content="A fictional Vadodara café website demo by Netra Dynamics.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&q=70&w=1200">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232a1a12'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' text-anchor='middle' fill='%23f6f0e4'%3EE%26amp;B%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body id="top">
+  <a class="skip" href="#main">Skip to content</a>
+
+  <div class="ribbon" role="note">
+    <p><strong>Website demo</strong> by Netra Dynamics. Ember &amp; Bean is a <strong>fictional café</strong>, not a real business.</p>
+  </div>
+
+  <header class="site-header" id="header">
+    <div class="container header__inner">
+      <a class="logo" href="#top" aria-label="Ember &amp; Bean, back to top"><span class="logo__mark" aria-hidden="true">E<i>&amp;</i>B</span><span class="logo__word">Ember <i>&amp;</i> Bean</span></a>
+      <nav class="nav" id="nav" aria-label="Primary">
+        <ul class="nav__list">
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#story">Our Story</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#visit">Visit Us</a></li>
+        </ul>
+        <a class="btn btn--ember nav__cta" href="#reserve">Reserve a Table</a>
+      </nav>
+      <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="nav" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__media media">
+        <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&q=70&w=800" srcset="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&q=70&w=640 640w, https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&q=70&w=960 960w, https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&q=70&w=1280 1280w, https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&q=70&w=1600 1600w, https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&q=70&w=2000 2000w" sizes="100vw" width="1600" height="1067" alt="Barista pouring hot water from a gooseneck kettle over a pour-over coffee setup" loading="eager" fetchpriority="high" decoding="async">
+      </div>
+      <div class="hero__shade" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <p class="eyebrow eyebrow--light"><span class="eyebrow__line" aria-hidden="true"></span>Specialty coffee &middot; Brunch &middot; Desserts</p>
+        <h1 id="hero-title">Slow coffee,<br><em>warm company.</em></h1>
+        <p class="hero__lead">Small-batch beans, bakery-fresh plates and a corner table that never feels rushed. Come in for one cup. Stay for the afternoon.</p>
+        <div class="hero__cta">
+          <a class="btn btn--light" href="#menu">Explore Our Menu</a>
+          <a class="btn btn--ghost" href="#visit">Find Us</a>
+        </div>
+      </div>
+      <div class="hero__foot container">
+        <p><span class="dot" aria-hidden="true"></span>Open daily, 8:00 AM &ndash; 11:00 PM <small>(demo hours)</small></p>
+        <a class="scroll-cue" href="#menu" aria-label="Scroll to the menu"><span aria-hidden="true"></span></a>
+      </div>
+    </section>
+
+    <!-- INTRO STRIP -->
+    <section class="strip" aria-label="What we serve">
+      <div class="container strip__inner">
+        <p>Specialty Coffee</p><i aria-hidden="true"></i>
+        <p>All-Day Breakfast</p><i aria-hidden="true"></i>
+        <p>Fresh Desserts</p><i aria-hidden="true"></i>
+        <p>Signature Drinks</p>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section class="section menu" id="menu" aria-labelledby="menu-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow"><span class="eyebrow__line" aria-hidden="true"></span>The Menu</p>
+          <h2 id="menu-title">Made slowly, <em>served warmly</em></h2>
+          <p>A short menu we can do properly. Everything below is sample content to show how a café menu can look online.</p>
+        </header>
+
+        <div class="tabs reveal" role="tablist" aria-label="Menu categories"><button class="tab" role="tab" id="tab-coffee" aria-controls="panel-coffee" aria-selected="true" tabindex="0">Specialty Coffee</button><button class="tab" role="tab" id="tab-breakfast" aria-controls="panel-breakfast" aria-selected="false" tabindex="-1">All-Day Breakfast</button><button class="tab" role="tab" id="tab-desserts" aria-controls="panel-desserts" aria-selected="false" tabindex="-1">Freshly Baked Desserts</button><button class="tab" role="tab" id="tab-drinks" aria-controls="panel-drinks" aria-selected="false" tabindex="-1">Signature Drinks</button></div>
+        <div class="panels">
+        <div class="panel" role="tabpanel" id="panel-coffee" aria-labelledby="tab-coffee">
+          <p class="panel__intro">Single-origin beans, roasted in small batches and brewed with care.</p>
+          <div class="dishes">
+            <article class="dish">
+              <div class="media dish__media"><img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&q=70&w=800" srcset="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&q=70&w=480 480w, https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&q=70&w=800 800w, https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&q=70&w=1200 1200w, https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&q=70&w=1600 1600w" sizes="(min-width: 900px) 30vw, (min-width: 600px) 45vw, 92vw" width="800" height="1000" alt="A hand holding a flat white with a milk-art heart" loading="lazy" decoding="async"></div>
+              <div class="dish__row"><h4>Ember Flat White</h4><span class="dish__rule" aria-hidden="true"></span><span class="dish__price"><span class="sr-only">Rupees </span>&#8377;220</span></div>
+              <p>Double ristretto, velvety steamed milk, a thin crown of microfoam.</p>
+            </article>
+            <article class="dish">
+              <div class="media dish__media"><img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&q=70&w=800" srcset="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&q=70&w=480 480w, https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&q=70&w=800 800w, https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&q=70&w=1200 1200w, https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&q=70&w=1600 1600w" sizes="(min-width: 900px) 30vw, (min-width: 600px) 45vw, 92vw" width="800" height="1000" alt="Black coffee in a white cup seen from above" loading="lazy" decoding="async"></div>
+              <div class="dish__row"><h4>Single-Origin Pour Over</h4><span class="dish__rule" aria-hidden="true"></span><span class="dish__price"><span class="sr-only">Rupees </span>&#8377;280</span></div>
+              <p>A rotating bean, brewed to order through a glass Chemex.</p>
+            </article>
+            <article class="dish">
+              <div class="media dish__media"><img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&q=70&w=800" srcset="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&q=70&w=480 480w, https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&q=70&w=800 800w, https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&q=70&w=1200 1200w, https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&q=70&w=1600 1600w" sizes="(min-width: 900px) 30vw, (min-width: 600px) 45vw, 92vw" width="800" height="1000" alt="Cappuccinos with latte art surrounded by green plants" loading="lazy" decoding="async"></div>
+              <div class="dish__row"><h4>Hazelnut Cappuccino</h4><span class="dish__rule" aria-hidden="true"></span><span class="dish__price"><span class="sr-only">Rupees </span>&#8377;240</span></div>
+              <p>Classic cappuccino with a whisper of roasted hazelnut.</p>
+            </article></div>
+        </div>
+        <div class="panel" role="tabpanel" id="panel-breakfast" aria-labelledby="tab-breakfast" hidden>
+          <p class="panel__intro">Slow plates, made from scratch and served until closing.</p>
+          <div class="dishes">
+            <article class="dish">
+              <div class="media dish__media"><img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=70&w=800" srcset="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=70&w=480 480w, https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=70&w=800 800w, https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=70&w=1200 1200w, https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=70&w=1600 1600w" sizes="(min-width: 900px) 30vw, (min-width: 600px) 45vw, 92vw" width="800" height="1000" alt="Fried egg on avocado toast on a white plate" loading="lazy" decoding="async"></div>
+              <div class="dish__row"><h4>Smashed Avocado Sourdough</h4><span class="dish__rule" aria-hidden="true"></span><span class="dish__price"><span class="sr-only">Rupees </span>&#8377;390</span></div>
+              <p>Charred sourdough, lime-smashed avocado, a soft-fried egg, chilli flakes.</p>
+            </article>
+            <article class="dish">
+              <div class="media dish__media"><img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&q=70&w=800" srcset="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&q=70&w=480 480w, https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&q=70&w=800 800w, https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&q=70&w=1200 1200w, https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&q=70&w=1600 1600w" sizes="(min-width: 900px) 30vw, (min-width: 600px) 45vw, 92vw" width="800" height="1000" alt="A stack of pancakes with syrup being poured over the top" loading="lazy" decoding="async"></div>
+              <div class="dish__row"><h4>Buttermilk Pancake Stack</h4><span class="dish__rule" aria-hidden="true"></span><span class="dish__price"><span class="sr-only">Rupees </span>&#8377;360</span></div>
+              <p>Three fluffy pancakes, banana, toasted nuts and warm maple.</p>
+            </article>
+            <article class="dish">
+              <div class="media dish__media"><img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&q=70&w=800" srcset="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&q=70&w=480 480w, https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&q=70&w=800 800w, https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&q=70&w=1200 1200w, https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&q=70&w=1600 1600w" sizes="(min-width: 900px) 30vw, (min-width: 600px) 45vw, 92vw" width="800" height="1000" alt="Golden croissants dusted with flour on a dark surface" loading="lazy" decoding="async"></div>
+              <div class="dish__row"><h4>Butter Croissant</h4><span class="dish__rule" aria-hidden="true"></span><span class="dish__price"><span class="sr-only">Rupees </span>&#8377;180</span></div>
+              <p>Laminated by hand, baked each morning. Served with cultured butter.</p>
+            </article></div>
+        </div>
+        <div class="panel" role="tabpanel" id="panel-desserts" aria-labelledby="tab-desserts" hidden>
+          <p class="panel__intro">Baked in-house each day. When it is gone, it is gone.</p>
+          <div class="dishes">
+            <article class="dish">
+              <div class="media dish__media"><img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&q=70&w=800" srcset="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&q=70&w=480 480w, https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&q=70&w=800 800w, https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&q=70&w=1200 1200w, https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&q=70&w=1600 1600w" sizes="(min-width: 900px) 30vw, (min-width: 600px) 45vw, 92vw" width="800" height="1000" alt="A chocolate cake with ganache drips and cream swirls" loading="lazy" decoding="async"></div>
+              <div class="dish__row"><h4>Dark Chocolate Drip Cake</h4><span class="dish__rule" aria-hidden="true"></span><span class="dish__price"><span class="sr-only">Rupees </span>&#8377;320</span></div>
+              <p>Deep cocoa sponge, ganache and whipped chocolate cream.</p>
+            </article>
+            <article class="dish">
+              <div class="media dish__media"><img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&q=70&w=800" srcset="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&q=70&w=480 480w, https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&q=70&w=800 800w, https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&q=70&w=1200 1200w, https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&q=70&w=1600 1600w" sizes="(min-width: 900px) 30vw, (min-width: 600px) 45vw, 92vw" width="800" height="1000" alt="Panna cotta jars topped with fresh strawberries" loading="lazy" decoding="async"></div>
+              <div class="dish__row"><h4>Vanilla Bean Panna Cotta</h4><span class="dish__rule" aria-hidden="true"></span><span class="dish__price"><span class="sr-only">Rupees </span>&#8377;260</span></div>
+              <p>Silky vanilla cream, macerated strawberries, a little lime zest.</p>
+            </article>
+            <article class="dish">
+              <div class="media dish__media"><img src="https://images.unsplash.com/photo-1495147466023-ac5c588e2e94?auto=format&fit=crop&q=70&w=800" srcset="https://images.unsplash.com/photo-1495147466023-ac5c588e2e94?auto=format&fit=crop&q=70&w=480 480w, https://images.unsplash.com/photo-1495147466023-ac5c588e2e94?auto=format&fit=crop&q=70&w=800 800w, https://images.unsplash.com/photo-1495147466023-ac5c588e2e94?auto=format&fit=crop&q=70&w=1200 1200w, https://images.unsplash.com/photo-1495147466023-ac5c588e2e94?auto=format&fit=crop&q=70&w=1600 1600w" sizes="(min-width: 900px) 30vw, (min-width: 600px) 45vw, 92vw" width="800" height="1000" alt="Fruit tarts decorated with berries and edible flowers" loading="lazy" decoding="async"></div>
+              <div class="dish__row"><h4>Seasonal Fruit Tart</h4><span class="dish__rule" aria-hidden="true"></span><span class="dish__price"><span class="sr-only">Rupees </span>&#8377;240</span></div>
+              <p>Crisp butter shell, vanilla custard, whatever fruit is best today.</p>
+            </article></div>
+        </div>
+        <div class="panel" role="tabpanel" id="panel-drinks" aria-labelledby="tab-drinks" hidden>
+          <p class="panel__intro">Our own recipes, built around flavours from home.</p>
+          <div class="dishes">
+            <article class="dish">
+              <div class="media dish__media"><img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&q=70&w=800" srcset="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&q=70&w=480 480w, https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&q=70&w=800 800w, https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&q=70&w=1200 1200w, https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&q=70&w=1600 1600w" sizes="(min-width: 900px) 30vw, (min-width: 600px) 45vw, 92vw" width="800" height="1000" alt="Iced coffee with swirling cream in a tall glass" loading="lazy" decoding="async"></div>
+              <div class="dish__row"><h4>Cold Brew Tonic</h4><span class="dish__rule" aria-hidden="true"></span><span class="dish__price"><span class="sr-only">Rupees </span>&#8377;290</span></div>
+              <p>Twenty-hour cold brew over tonic, orange peel and ice.</p>
+            </article>
+            <article class="dish">
+              <div class="media dish__media"><img src="https://images.unsplash.com/photo-1507133750040-4a8f57021571?auto=format&fit=crop&q=70&w=800" srcset="https://images.unsplash.com/photo-1507133750040-4a8f57021571?auto=format&fit=crop&q=70&w=480 480w, https://images.unsplash.com/photo-1507133750040-4a8f57021571?auto=format&fit=crop&q=70&w=800 800w, https://images.unsplash.com/photo-1507133750040-4a8f57021571?auto=format&fit=crop&q=70&w=1200 1200w, https://images.unsplash.com/photo-1507133750040-4a8f57021571?auto=format&fit=crop&q=70&w=1600 1600w" sizes="(min-width: 900px) 30vw, (min-width: 600px) 45vw, 92vw" width="800" height="1000" alt="Two latte-art coffees on a wooden table beside leafy plants" loading="lazy" decoding="async"></div>
+              <div class="dish__row"><h4>Saffron Cardamom Latte</h4><span class="dish__rule" aria-hidden="true"></span><span class="dish__price"><span class="sr-only">Rupees </span>&#8377;280</span></div>
+              <p>Espresso, steamed milk, a saffron infusion and crushed cardamom.</p>
+            </article>
+            <article class="dish">
+              <div class="media dish__media"><img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&q=70&w=800" srcset="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&q=70&w=480 480w, https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&q=70&w=800 800w, https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&q=70&w=1200 1200w, https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&q=70&w=1600 1600w" sizes="(min-width: 900px) 30vw, (min-width: 600px) 45vw, 92vw" width="800" height="1000" alt="Espresso grounds in a portafilter above a latte with art" loading="lazy" decoding="async"></div>
+              <div class="dish__row"><h4>Jaggery Iced Latte</h4><span class="dish__rule" aria-hidden="true"></span><span class="dish__price"><span class="sr-only">Rupees </span>&#8377;260</span></div>
+              <p>Espresso over ice and milk, sweetened with unrefined jaggery.</p>
+            </article></div>
+        </div></div>
+
+        <p class="demo-note reveal">Demo content: dishes and prices are examples only and do not represent a real café.</p>
+      </div>
+    </section>
+
+    <!-- STORY -->
+    <section class="section story" id="story" aria-labelledby="story-title">
+      <div class="container story__grid">
+        <div class="story__images reveal">
+          <div class="media story__img-main"><img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&q=70&w=800" srcset="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&q=70&w=480 480w, https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&q=70&w=800 800w, https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&q=70&w=1200 1200w, https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&q=70&w=1600 1600w" sizes="(min-width: 900px) 40vw, 90vw" width="800" height="1000" alt="Ground coffee and an espresso portafilter laid out on a wooden board" loading="lazy" decoding="async"></div>
+          <div class="media story__img-sub"><img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&q=70&w=800" srcset="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&q=70&w=400 400w, https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&q=70&w=600 600w, https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&q=70&w=800 800w" sizes="(min-width: 900px) 20vw, 45vw" width="600" height="600" alt="Close-up of roasted coffee beans" loading="lazy" decoding="async"></div>
+          <p class="story__caption" aria-hidden="true">Imagined in Vadodara</p>
+        </div>
+        <div class="story__text reveal">
+          <p class="eyebrow"><span class="eyebrow__line" aria-hidden="true"></span>Our Story</p>
+          <h2 id="story-title">A room built for <em>lingering</em></h2>
+          <p class="lead">Ember &amp; Bean began with a simple idea: the best café is the one you do not want to leave.</p>
+          <p>We imagine a place where beans are chosen for flavour first, roasted in small batches and pulled with patience. Where bread is baked before the doors open, eggs come from farms we know by name, and fruit changes with the season.</p>
+          <p>It is also a place for people. Soft light, good chairs, a table for one book or ten friends, and a team who remembers how you take your coffee.</p>
+          <ul class="values">
+            <li><strong>Considered coffee</strong><span>Traceable beans, measured and brewed with care.</span></li>
+            <li><strong>Honest ingredients</strong><span>Fresh, local where possible, never fussy.</span></li>
+            <li><strong>Unhurried hospitality</strong><span>No rush, no timers. Just a good table.</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCES -->
+    <section class="section experiences" aria-labelledby="exp-title">
+      <div class="container">
+        <header class="section-head section-head--center reveal">
+          <p class="eyebrow eyebrow--center"><span class="eyebrow__line" aria-hidden="true"></span>Signature Experiences<span class="eyebrow__line" aria-hidden="true"></span></p>
+          <h2 id="exp-title">Three ways to <em>spend a while</em></h2>
+        </header>
+        <div class="exp-grid">
+          <article class="exp reveal">
+            <div class="media exp__media"><img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&q=70&w=800" srcset="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&q=70&w=480 480w, https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&q=70&w=800 800w, https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&q=70&w=1200 1200w, https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&q=70&w=1600 1600w" sizes="(min-width: 900px) 30vw, 92vw" width="800" height="1000" alt="A white cup of black coffee on a wooden table" loading="lazy" decoding="async"></div>
+            <div class="exp__body"><span class="exp__num" aria-hidden="true">01</span><h3>Slow Mornings</h3><p>A pour-over, a warm croissant and a window seat. Start the day at your own pace.</p></div>
+          </article>
+          <article class="exp reveal">
+            <div class="media exp__media"><img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&q=70&w=800" srcset="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&q=70&w=480 480w, https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&q=70&w=800 800w, https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&q=70&w=1200 1200w, https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&q=70&w=1600 1600w" sizes="(min-width: 900px) 30vw, 92vw" width="800" height="1000" alt="Friends clinking cups of coffee together over a table" loading="lazy" decoding="async"></div>
+            <div class="exp__body"><span class="exp__num" aria-hidden="true">02</span><h3>Coffee with Friends</h3><p>Long tables, shared plates and the kind of conversation that makes the second round inevitable.</p></div>
+          </article>
+          <article class="exp reveal">
+            <div class="media exp__media"><img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&q=70&w=800" srcset="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&q=70&w=480 480w, https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&q=70&w=800 800w, https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&q=70&w=1200 1200w, https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&q=70&w=1600 1600w" sizes="(min-width: 900px) 30vw, 92vw" width="800" height="1000" alt="A stack of glazed doughnuts with sprinkles" loading="lazy" decoding="async"></div>
+            <div class="exp__body"><span class="exp__num" aria-hidden="true">03</span><h3>Fresh Desserts</h3><p>Cakes, tarts and sweet things baked in the morning and gone by evening.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="section gallery" id="gallery" aria-labelledby="gal-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow"><span class="eyebrow__line" aria-hidden="true"></span>Gallery</p>
+          <h2 id="gal-title">A look <em>inside</em></h2>
+          <p>Tap any photo to view it larger. Photography is from Unsplash and is used for demonstration.</p>
+        </header>
+        <ul class="g-grid reveal">
+        <li class="g-item g-wide">
+          <button class="g-btn" type="button" data-full="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&q=70&w=1600" data-alt="Warm, plant-filled café interior with wooden tables" aria-label="Enlarge photo: Warm, plant-filled café interior with wooden tables">
+            <span class="media"><img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&q=70&w=800" srcset="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&q=70&w=480 480w, https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&q=70&w=800 800w, https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&q=70&w=1200 1200w, https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&q=70&w=1600 1600w" sizes="(min-width: 900px) 30vw, 50vw" width="1200" height="800" alt="Warm, plant-filled café interior with wooden tables" loading="lazy" decoding="async"></span>
+            <span class="g-tag">Interiors</span>
+          </button>
+        </li>
+        <li class="g-item ">
+          <button class="g-btn" type="button" data-full="https://images.unsplash.com/photo-1517433670267-08bbd4be890f?auto=format&fit=crop&q=70&w=1600" data-alt="Fresh breads and pastries in a glass bakery counter" aria-label="Enlarge photo: Fresh breads and pastries in a glass bakery counter">
+            <span class="media"><img src="https://images.unsplash.com/photo-1517433670267-08bbd4be890f?auto=format&fit=crop&q=70&w=800" srcset="https://images.unsplash.com/photo-1517433670267-08bbd4be890f?auto=format&fit=crop&q=70&w=480 480w, https://images.unsplash.com/photo-1517433670267-08bbd4be890f?auto=format&fit=crop&q=70&w=800 800w, https://images.unsplash.com/photo-1517433670267-08bbd4be890f?auto=format&fit=crop&q=70&w=1200 1200w, https://images.unsplash.com/photo-1517433670267-08bbd4be890f?auto=format&fit=crop&q=70&w=1600 1600w" sizes="(min-width: 900px) 30vw, 50vw" width="800" height="1000" alt="Fresh breads and pastries in a glass bakery counter" loading="lazy" decoding="async"></span>
+            <span class="g-tag">Bakery</span>
+          </button>
+        </li>
+        <li class="g-item ">
+          <button class="g-btn" type="button" data-full="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&q=70&w=1600" data-alt="Layered rainbow cake on a blue stand" aria-label="Enlarge photo: Layered rainbow cake on a blue stand">
+            <span class="media"><img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&q=70&w=800" srcset="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&q=70&w=480 480w, https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&q=70&w=800 800w, https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&q=70&w=1200 1200w, https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&q=70&w=1600 1600w" sizes="(min-width: 900px) 30vw, 50vw" width="800" height="1000" alt="Layered rainbow cake on a blue stand" loading="lazy" decoding="async"></span>
+            <span class="g-tag">Desserts</span>
+          </button>
+        </li>
+        <li class="g-item ">
+          <button class="g-btn" type="button" data-full="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&q=70&w=1600" data-alt="Eggs on toast with greens for brunch" aria-label="Enlarge photo: Eggs on toast with greens for brunch">
+            <span class="media"><img src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&q=70&w=800" srcset="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&q=70&w=480 480w, https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&q=70&w=800 800w, https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&q=70&w=1200 1200w, https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&q=70&w=1600 1600w" sizes="(min-width: 900px) 30vw, 50vw" width="800" height="800" alt="Eggs on toast with greens for brunch" loading="lazy" decoding="async"></span>
+            <span class="g-tag">Brunch</span>
+          </button>
+        </li>
+        <li class="g-item g-tall">
+          <button class="g-btn" type="button" data-full="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&q=70&w=1600" data-alt="Ground coffee and an espresso portafilter on a wooden board" aria-label="Enlarge photo: Ground coffee and an espresso portafilter on a wooden board">
+            <span class="media"><img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&q=70&w=800" srcset="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&q=70&w=480 480w, https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&q=70&w=800 800w, https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&q=70&w=1200 1200w, https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&q=70&w=1600 1600w" sizes="(min-width: 900px) 30vw, 50vw" width="800" height="1200" alt="Ground coffee and an espresso portafilter on a wooden board" loading="lazy" decoding="async"></span>
+            <span class="g-tag">Coffee</span>
+          </button>
+        </li>
+        <li class="g-item g-wide">
+          <button class="g-btn" type="button" data-full="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?auto=format&fit=crop&q=70&w=1600" data-alt="Café terrace on a sunlit street" aria-label="Enlarge photo: Café terrace on a sunlit street">
+            <span class="media"><img src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?auto=format&fit=crop&q=70&w=800" srcset="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?auto=format&fit=crop&q=70&w=480 480w, https://images.unsplash.com/photo-1559925393-8be0ec4767c8?auto=format&fit=crop&q=70&w=800 800w, https://images.unsplash.com/photo-1559925393-8be0ec4767c8?auto=format&fit=crop&q=70&w=1200 1200w, https://images.unsplash.com/photo-1559925393-8be0ec4767c8?auto=format&fit=crop&q=70&w=1600 1600w" sizes="(min-width: 900px) 30vw, 50vw" width="1200" height="800" alt="Café terrace on a sunlit street" loading="lazy" decoding="async"></span>
+            <span class="g-tag">Interiors</span>
+          </button>
+        </li>
+        <li class="g-item ">
+          <button class="g-btn" type="button" data-full="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&q=70&w=1600" data-alt="Panna cotta jars with strawberries" aria-label="Enlarge photo: Panna cotta jars with strawberries">
+            <span class="media"><img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&q=70&w=800" srcset="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&q=70&w=480 480w, https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&q=70&w=800 800w, https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&q=70&w=1200 1200w, https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&q=70&w=1600 1600w" sizes="(min-width: 900px) 30vw, 50vw" width="800" height="800" alt="Panna cotta jars with strawberries" loading="lazy" decoding="async"></span>
+            <span class="g-tag">Desserts</span>
+          </button>
+        </li>
+        <li class="g-item ">
+          <button class="g-btn" type="button" data-full="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&q=70&w=1600" data-alt="Pancake stack with syrup" aria-label="Enlarge photo: Pancake stack with syrup">
+            <span class="media"><img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&q=70&w=800" srcset="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&q=70&w=480 480w, https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&q=70&w=800 800w, https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&q=70&w=1200 1200w, https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&q=70&w=1600 1600w" sizes="(min-width: 900px) 30vw, 50vw" width="800" height="1000" alt="Pancake stack with syrup" loading="lazy" decoding="async"></span>
+            <span class="g-tag">Brunch</span>
+          </button>
+        </li>
+        <li class="g-item ">
+          <button class="g-btn" type="button" data-full="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&q=70&w=1600" data-alt="Café counter with plants and warm pendant lights" aria-label="Enlarge photo: Café counter with plants and warm pendant lights">
+            <span class="media"><img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&q=70&w=800" srcset="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&q=70&w=480 480w, https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&q=70&w=800 800w, https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&q=70&w=1200 1200w, https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&q=70&w=1600 1600w" sizes="(min-width: 900px) 30vw, 50vw" width="800" height="1000" alt="Café counter with plants and warm pendant lights" loading="lazy" decoding="async"></span>
+            <span class="g-tag">Interiors</span>
+          </button>
+        </li></ul>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section voices" aria-labelledby="voices-title">
+      <div class="container">
+        <header class="section-head section-head--center reveal">
+          <p class="eyebrow eyebrow--center"><span class="eyebrow__line" aria-hidden="true"></span>Guest Voices<span class="eyebrow__line" aria-hidden="true"></span></p>
+          <h2 id="voices-title">What guests <em>might say</em></h2>
+          <p class="sample-flag">Sample testimonials written for this demo. They are not real reviews.</p>
+        </header>
+        <div class="voices__grid">
+          <figure class="quote reveal">
+            <blockquote><p>&ldquo;The pour-over alone is worth the trip. I came for coffee and stayed through lunch.&rdquo;</p></blockquote>
+            <figcaption><strong>Sample Guest A</strong><span>Sample testimonial</span></figcaption>
+          </figure>
+          <figure class="quote reveal">
+            <blockquote><p>&ldquo;Calm, warm and beautifully made. The saffron latte is something I would not find elsewhere.&rdquo;</p></blockquote>
+            <figcaption><strong>Sample Guest B</strong><span>Sample testimonial</span></figcaption>
+          </figure>
+          <figure class="quote reveal">
+            <blockquote><p>&ldquo;Our weekend brunch spot. Unhurried service, a proper menu and desserts worth saving room for.&rdquo;</p></blockquote>
+            <figcaption><strong>Sample Guest C</strong><span>Sample testimonial</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- VISIT -->
+    <section class="section visit" id="visit" aria-labelledby="visit-title">
+      <div class="container visit__grid">
+        <div class="visit__text reveal">
+          <p class="eyebrow"><span class="eyebrow__line" aria-hidden="true"></span>Visit Us</p>
+          <h2 id="visit-title">Find your <em>corner table</em></h2>
+          <p class="sample-flag">Placeholder details for demonstration. This café does not exist.</p>
+
+          <div class="info">
+            <div>
+              <h3>Location</h3>
+              <address>
+                [Café address placeholder]<br>
+                [Neighbourhood], Vadodara<br>
+                Gujarat, India
+              </address>
+            </div>
+            <div>
+              <h3>Contact</h3>
+              <p>Phone: +91 XXXXX XXXXX<br>Email: hello@yourcafe.example</p>
+            </div>
+          </div>
+
+          <h3 class="hours-title">Opening hours <small>(demo)</small></h3>
+          <table class="hours">
+            <caption class="sr-only">Opening hours</caption>
+            <tbody>
+              <tr><th scope="row">Monday &ndash; Thursday</th><td>8:00 AM &ndash; 11:00 PM</td></tr>
+              <tr><th scope="row">Friday &ndash; Sunday</th><td>8:00 AM &ndash; 11:30 PM</td></tr>
+            </tbody>
+          </table>
+
+          <div class="visit__cta">
+            <a class="btn btn--dark" href="#" data-directions>Get Directions</a>
+            <a class="btn btn--outline" href="#reserve">Reserve a Table</a>
+          </div>
+          <p class="fine" data-directions-note hidden>Directions are not linked yet. Add a verified Google Maps link in script.js (CONFIG.mapsUrl).</p>
+        </div>
+
+        <div class="map reveal" role="img" aria-label="Placeholder map of Vadodara. No real location is shown.">
+          <div class="map__grid" aria-hidden="true"></div>
+          <div class="map__pin" aria-hidden="true"><span></span></div>
+          <div class="map__label"><strong>Map placeholder</strong><span>Vadodara, Gujarat</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESERVE -->
+    <section class="section reserve" id="reserve" aria-labelledby="reserve-title">
+      <div class="container reserve__grid">
+        <div class="reserve__intro reveal">
+          <p class="eyebrow eyebrow--light"><span class="eyebrow__line" aria-hidden="true"></span>Reservations</p>
+          <h2 id="reserve-title">Reserve a <em>table</em></h2>
+          <p>Tell us when you would like to visit and we will confirm by phone or WhatsApp. On a live site, this enquiry would reach the café directly.</p>
+          <div class="demo-box">
+            <strong>This form is a demonstration.</strong>
+            <span>It checks your details but sends nothing, and no table is booked. Use the WhatsApp button to see how a real enquiry would open.</span>
+          </div>
+          <button class="btn btn--wa" type="button" id="wa-btn">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12.04 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.27-1.38A9.9 9.9 0 1 0 12.04 2Zm0 18.1a8.2 8.2 0 0 1-4.2-1.15l-.3-.18-3.13.82.84-3.05-.2-.31a8.2 8.2 0 1 1 7 3.87Zm4.5-6.1c-.25-.12-1.46-.72-1.69-.8-.23-.09-.39-.12-.56.12-.16.25-.64.8-.78.97-.15.16-.29.18-.54.06a6.7 6.7 0 0 1-3.3-2.88c-.25-.43.25-.4.72-1.33.08-.16.04-.3-.02-.42-.06-.12-.56-1.35-.77-1.85-.2-.48-.4-.42-.56-.42h-.47c-.16 0-.43.06-.65.3-.23.25-.86.84-.86 2.05s.88 2.38 1 2.55c.12.16 1.73 2.64 4.19 3.7 1.56.67 2.17.73 2.95.62.48-.07 1.46-.6 1.67-1.17.2-.58.2-1.07.14-1.17-.06-.1-.23-.16-.47-.28Z"/></svg>
+            Enquire on WhatsApp
+          </button>
+          <p class="fine fine--light" id="wa-note" hidden></p>
+        </div>
+
+        <form class="form reveal" id="reserve-form" novalidate aria-describedby="form-demo">
+          <p class="form__demo" id="form-demo">Demo form. Nothing is sent or booked.</p>
+          <div class="field">
+            <label for="f-name">Full name</label>
+            <input id="f-name" name="name" type="text" autocomplete="name" required placeholder="Your name">
+            <p class="err" id="e-name" role="alert"></p>
+          </div>
+          <div class="field">
+            <label for="f-phone">Phone number</label>
+            <input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required placeholder="98XXXXXXXX">
+            <p class="err" id="e-phone" role="alert"></p>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="f-date">Date</label>
+              <input id="f-date" name="date" type="date" required>
+              <p class="err" id="e-date" role="alert"></p>
+            </div>
+            <div class="field">
+              <label for="f-time">Time</label>
+              <select id="f-time" name="time" required><option value="">Select time</option></select>
+              <p class="err" id="e-time" role="alert"></p>
+            </div>
+          </div>
+          <div class="field">
+            <label for="f-guests">Number of guests</label>
+            <select id="f-guests" name="guests" required>
+              <option value="">Select guests</option>
+              <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+              <option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>
+              <option value="10+">More than 10</option>
+            </select>
+            <p class="err" id="e-guests" role="alert"></p>
+          </div>
+          <div class="field">
+            <label for="f-note">Special request <span>(optional)</span></label>
+            <textarea id="f-note" name="note" rows="3" maxlength="300" placeholder="Birthday, high chair, quiet corner..."></textarea>
+          </div>
+          <button class="btn btn--ember btn--block" type="submit">Check My Enquiry</button>
+          <div class="result" id="result" tabindex="-1" role="status" hidden></div>
+        </form>
+      </div>
+    </section>
+
+    <!-- NETRA CTA -->
+    <section class="netra" aria-labelledby="netra-title">
+      <div class="container netra__inner">
+        <div>
+          <p class="eyebrow"><span class="eyebrow__line" aria-hidden="true"></span>For café owners</p>
+          <h2 id="netra-title">This is what <em>your café</em> could look like.</h2>
+          <p>Menu, reservations, WhatsApp and directions in one fast, mobile-first website. Built by Netra Dynamics.</p>
+        </div>
+        <a class="btn btn--dark" href="#" data-netra target="_blank" rel="noopener" hidden>Talk to Netra Dynamics</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a class="logo" href="#top" aria-label="Ember &amp; Bean, back to top"><span class="logo__mark" aria-hidden="true">E<i>&amp;</i>B</span><span class="logo__word">Ember <i>&amp;</i> Bean</span></a>
+        <p>Slow coffee. Warm company.</p>
+        <ul class="social" aria-label="Social media (placeholders)">
+          <li><a href="#" data-social="instagram">Instagram</a></li>
+          <li><a href="#" data-social="facebook">Facebook</a></li>
+          <li><a href="#" data-social="google">Google</a></li>
+        </ul>
+      </div>
+      <nav aria-label="Footer">
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#story">Our Story</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#visit">Visit Us</a></li>
+          <li><a href="#reserve">Reserve a Table</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h3>Contact</h3>
+        <ul class="plain">
+          <li>[Café address placeholder], Vadodara</li>
+          <li>+91 XXXXX XXXXX</li>
+          <li>hello@yourcafe.example</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Hours (demo)</h3>
+        <ul class="plain">
+          <li>Mon &ndash; Thu: 8:00 AM &ndash; 11:00 PM</li>
+          <li>Fri &ndash; Sun: 8:00 AM &ndash; 11:30 PM</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__legal">
+      <p>Ember &amp; Bean is a fictional café. This website is a demonstration created by <a href="#" data-netra target="_blank" rel="noopener">Netra Dynamics</a>. Menu, prices, reviews, address and hours are placeholders. Photography via <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a>.</p>
+    </div>
+  </footer>
+
+  <button class="to-top" id="to-top" type="button" aria-label="Back to top" hidden>
+    <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <dialog class="lightbox" id="lightbox" aria-label="Photo viewer">
+    <form method="dialog"><button class="lightbox__close" aria-label="Close photo">&times;</button></form>
+    <img id="lightbox-img" src="" alt="">
+  </dialog>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
